@@ -1,0 +1,21 @@
+[
+    {
+      "name": "Alice Johnson",
+      "position": "Buyer's Agent",
+      "short_description": "As a buyer's agent, Alice Johnson excels in understanding her clients' needs and preferences, guiding them through the home buying process with expertise and care. With a keen eye for detail and market trends, she helps her clients find their dream homes while negotiating the best deals on their behalf.",
+      "image_link": "/team-img-1.jpg"
+    },
+    {
+      "name": "David Smith",
+      "position": "Listing Agent",
+      "short_description": "David Smith, a seasoned listing agent, utilizes his in-depth knowledge of the local market and effective marketing strategies to help sellers achieve their goals. With a focus on maximizing property exposure and optimizing sales prices, he ensures a smooth selling process from start to finish.",
+      "image_link": "/team-img-3.jpg"
+    },
+    {
+      "name": "Emily Davis",
+      "position": "Real Estate Broker",
+      "short_description": "Emily Davis, a reputable real estate broker, leads her team with integrity and dedication. With a wealth of experience and a vast network, she provides comprehensive services, including property valuation, negotiation, and transaction management. Emily is committed to delivering exceptional results for her clients.",
+      "image_link": "/team-img-2.jpg"
+    }
+  ]
+  
