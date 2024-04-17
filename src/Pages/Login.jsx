@@ -3,10 +3,24 @@ import { FaGithub } from "react-icons/fa";
 import { FiEye } from "react-icons/fi";
 import { FiEyeOff } from "react-icons/fi";
 
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { AuthContext } from "../AuthProvider/AuthProvider";
+import { useForm } from "react-hook-form";
 
 const Login = () => {
     const [show,setShow] = useState(false);
+    const {logIn} = useContext(AuthContext);
+    const {
+        register,
+        handleSubmit,
+        formState: { errors },
+      } = useForm() 
+    const onSubmit = data => {
+        logIn(data.email,data.password)
+        .then(result => console.log(result.user))
+        .catch(error => console.log(error.message))
+        console.log(data)
+    }
     return (
         <div className="w-full flex items-center justify-center min-h-screen p-2 md:p-0">
             <div className="md:w-[50%] md:p-20 p-5 w-full border-2 border-red-200 rounded-md shadow">
@@ -14,12 +28,13 @@ const Login = () => {
                     <h1 className=" text-4xl font-bold mb-2">Log in</h1>
                     <p className="text-sm dark:text-gray-600">Log in to access your account</p>
                 </div>
-                <form action="" className="space-y-6">
+                <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
                     <div>
                         <label htmlFor="email" className="block mb-2 text-sm">
                             Email adrress
                         </label>
-                        <input id="email" type="email" className="w-full px-3 py-2 border rounded-md border-gray-300 bg-gray-50 text-gray-800" required/>
+                        <input id="email" type="email" className="w-full px-3 py-2 border rounded-md border-gray-300 bg-gray-50 text-gray-800" {...register("email",{ required: true })}/>
+                        {errors.email && <span className="font-work text-red-500">This field is required</span>}
                     </div>
                   <div>
                   <div className="flex justify-between mb-2">
@@ -31,7 +46,8 @@ const Login = () => {
                         </a>
                     </div>
                     <div className="relative">
-                        <input className="w-full px-3 py-2 border rounded-md border-gray-300 bg-gray-50 text-gray-800" type={show ? "text": "password"} required/>
+                        <input className="w-full px-3 py-2 border rounded-md border-gray-300 bg-gray-50 text-gray-800" type={show ? "text": "password"}  {...register("password",{ required: true })}/>
+                        {errors.password && <span className="font-work text-red-500">This field is required</span>}
                         {
                             show ? <FiEye className="absolute right-5 top-3 text-lg font-bold " onClick={()=>{
                                 setShow(!show)

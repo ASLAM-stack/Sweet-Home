@@ -16,6 +16,9 @@ const Register = () => {
         formState: { errors },
       } = useForm() 
     const onSubmit = data => {
+        createUser(data.email,data.password)
+        .then(result => console.log(result.user))
+        .catch(error => console.log(error.message))
         console.log(data)
     }
     const [show,setShow] = useState(false);
