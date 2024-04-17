@@ -3,9 +3,21 @@ import { FaGithub } from "react-icons/fa";
 import { FiEye } from "react-icons/fi";
 import { FiEyeOff } from "react-icons/fi";
 
-import { useState } from "react";
+import { useContext, useState } from "react";
+import   { AuthContext } from "../AuthProvider/AuthProvider";
+import { useForm } from "react-hook-form";
 
 const Register = () => {
+    const {createUser} = useContext(AuthContext);
+    const {
+        register,
+        handleSubmit,
+        watch,
+        formState: { errors },
+      } = useForm() 
+    const onSubmit = data => {
+        console.log(data)
+    }
     const [show,setShow] = useState(false);
     return (
         <div className="w-full flex items-center justify-center min-h-screen p-2 md:p-0">
@@ -14,24 +26,27 @@ const Register = () => {
                     <h1 className=" text-4xl font-bold mb-2">Register Now</h1>
                     <p className="text-sm dark:text-gray-600">Register to access all of our features...</p>
                 </div>
-                <form action="" className="space-y-6">
+                <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
                     <div>
                         <label htmlFor="name" className="block mb-2 text-sm">
                             Full Name
                         </label>
-                        <input id="name" type="text" className="w-full px-3 py-2 border rounded-md border-gray-300 bg-gray-50 text-gray-800" required/>
+                        <input id="name" type="text" className="w-full px-3 py-2 border rounded-md border-gray-300 bg-gray-50 text-gray-800" {...register("fullName",{ required: true })}/>
+                        {errors.fullName && <span className="font-work text-red-500">This field is required</span>}
                     </div>
                     <div>
                         <label htmlFor="photo" className="block mb-2 text-sm">
                             Photo Url
                         </label>
-                        <input id="photo" type="url" className="w-full px-3 py-2 border rounded-md border-gray-300 bg-gray-50 text-gray-800" required/>
+                        <input id="photo" type="url" className="w-full px-3 py-2 border rounded-md border-gray-300 bg-gray-50 text-gray-800" {...register("imageUrl",{ required: true })}/>
+                        {errors.imageUrl && <span className="font-work text-red-500">This field is required</span>}
                     </div>
                     <div>
                         <label htmlFor="email" className="block mb-2 text-sm">
                             Email adrress
                         </label>
-                        <input id="email" type="email" className="w-full px-3 py-2 border rounded-md border-gray-300 bg-gray-50 text-gray-800" required/>
+                        <input id="email" type="email" className="w-full px-3 py-2 border rounded-md border-gray-300 bg-gray-50 text-gray-800" {...register("email",{ required: true })}/>
+                        {errors.email && <span className="font-work text-red-500">This field is required</span>}
                     </div>
                   <div>
                   <div className="flex justify-between mb-2">
@@ -43,7 +58,8 @@ const Register = () => {
                         </a>
                     </div>
                     <div className="relative">
-                        <input className="w-full px-3 py-2 border rounded-md border-gray-300 bg-gray-50 text-gray-800" type={show ? "text": "password"} required/>
+                        <input className="w-full px-3 py-2 border rounded-md border-gray-300 bg-gray-50 text-gray-800" type={show ? "text": "password"} {...register("password",{ required: true })}/>
+                        {errors.password && <span className="font-work text-red-500">This field is required</span>}
                         {
                             show ? <FiEye className="absolute right-5 top-3 text-lg font-bold " onClick={()=>{
                                 setShow(!show)
