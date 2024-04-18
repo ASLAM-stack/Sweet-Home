@@ -6,6 +6,7 @@ import { AuthContext } from "../../providers/AuthProvider";
 import Swal from 'sweetalert2'
 import { GithubAuthProvider, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import auth from "../../Firebase/firebase.config";
+import { Helmet } from "react-helmet-async";
 
 const Login = () => {
     const [showPass, setShowPass] = useState(false)
@@ -81,6 +82,9 @@ const Login = () => {
     return (
 
         <div>
+            <Helmet>
+        <title>Sweet Home | Login </title>
+      </Helmet>
             <NavBar></NavBar>
             <div className="hero min-h-screen bg-base-200">
 

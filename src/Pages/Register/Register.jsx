@@ -9,6 +9,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { GithubAuthProvider, GoogleAuthProvider, signInWithPopup, updateProfile } from "firebase/auth";
 import auth from "../../Firebase/firebase.config";
 import Swal from 'sweetalert2'
+import { Helmet } from "react-helmet-async";
 
 
 const Register = () => {
@@ -102,6 +103,9 @@ const Register = () => {
 
     return (
         <div>
+            <Helmet>
+        <title>Sweet Home | Register </title>
+      </Helmet>
             <NavBar></NavBar>
             <div className="hero min-h-screen bg-base-100 mt-5">
                 <div className="hero-content flex-col ">

@@ -6,6 +6,7 @@ import Estate from "../../Estate/Estate";
 import NavBar from "../../NavBar/NavBar";
 import Slider from "../../Slider/Slider";
 import Sponsor from "../../Sponsor/Sponsor";
+import Agents from "../../Agent/Agents";
 
 
 
@@ -22,6 +23,7 @@ const Home = () => {
       <NavBar></NavBar>
       <Slider></Slider>
       <Estate></Estate>
+      <Agents></Agents>
      
 
 

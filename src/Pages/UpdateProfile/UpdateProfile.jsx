@@ -4,6 +4,7 @@ import NavBar from "../../NavBar/NavBar";
 // import { useNavigate } from "react-router-dom";
 import { FaUserSecret } from "react-icons/fa";
 import Swal from "sweetalert2";
+import { Helmet } from "react-helmet-async";
 
 const UpdateProfile = () => {
     const { user,handleUpdateProfile } = useContext(AuthContext);
@@ -46,6 +47,9 @@ const UpdateProfile = () => {
 
     return (
         <div>
+            <Helmet>
+        <title>Sweet Home | Update profile </title>
+      </Helmet>
             <NavBar></NavBar>
 
 

@@ -1,9 +1,13 @@
+import { Helmet } from "react-helmet-async";
 import NavBar from "../../NavBar/NavBar";
 
 const ContactUs = () => {
     return (
         <div>
             <NavBar />
+            <Helmet>
+        <title>Sweet Home | Contact US </title>
+      </Helmet>
             <img className="w-full h-64" src="https://i.ibb.co/KwnQzkF/gradient-contact-form-template-23-2150842080.jpg" alt="" />
             <div className="bg-gray-100 min-h-screen flex items-center justify-center">
                 <div className="max-w-md w-full bg-white p-8 rounded-lg shadow-lg">
