@@ -2,7 +2,6 @@ import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
 import NavBar from "../../NavBar/NavBar";
 // import { useNavigate } from "react-router-dom";
-import { FaUserSecret } from "react-icons/fa";
 import Swal from "sweetalert2";
 import { Helmet } from "react-helmet-async";
 
@@ -46,27 +45,28 @@ const UpdateProfile = () => {
     };
 
     return (
-        <div>
+        <div className="md:p-0 p-4">
             <Helmet>
         <title>Sweet Home | Update profile </title>
       </Helmet>
             <NavBar></NavBar>
 
 
-            <div className="bg-base-200 min-h-96 flex justify-around items-center">
+            <div className="bg-lime-300 min-h-96 flex justify-around items-center flex-wrap p-4 gap-5 md:gap-0 rounded-lg">
 
-                <div>
+                <div className="md:w-1/2 w-full
+                ">
                     <h2 className="text-3xl text-center mb-4">User Profile</h2>
-                    <FaUserSecret size={200} className="mx-auto mb-8"></FaUserSecret>
+                     <img className="mx-auto mb-4 w-40" src={user.photoURL} alt="" />
                     <p className="text-lg"><strong>Name:</strong> {user.displayName}</p>
                     <p className="text-lg"><strong>Email:</strong> {user.email}</p>
-                    <p className="text-lg"><strong>Photo URL:</strong> {user.photoURL}</p>
+                    <p className="text-lg"><strong>Photo URL:</strong> {user.photoURL.slice(0,20)}</p>
                 </div>
                 <div>
 
                     <div className="flex flex-col justify-center">
                         <h1 className="text-5xl font-bold text-center mb-6">Update Your Profile</h1>
-                        <div className="card w-full max-w-md mx-auto shadow-xl bg-white">
+                        <div className="card w-full max-w-md mx-auto shadow-xl bg-white p-5">
                             <div>
                                 <h2> Your Name:</h2>
                                 <input
