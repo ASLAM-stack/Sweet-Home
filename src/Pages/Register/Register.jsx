@@ -107,7 +107,7 @@ const Register = () => {
         <title>Sweet Home | Register </title>
       </Helmet>
             <NavBar></NavBar>
-            <div className="hero min-h-screen bg-base-100 mt-5">
+            <div className="hero min-h-screen  mt-5">
                 <div className="hero-content flex-col ">
                     <div className="text-center ">
                         <h1 className="text-5xl font-bold">Register Now!</h1>

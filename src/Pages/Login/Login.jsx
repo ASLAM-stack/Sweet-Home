@@ -57,7 +57,7 @@ const Login = () => {
                 icon: 'success',
                 confirmButtonText: 'Ok'
             });
-            
+            navigate('/')
         })
         .catch(error => console.error(error))
     }
@@ -73,6 +73,7 @@ const Login = () => {
                 icon: 'success',
                 confirmButtonText: 'Ok'
             });
+            navigate('/')
         })
         .catch(error => console.error(error))
 
@@ -86,7 +87,7 @@ const Login = () => {
         <title>Sweet Home | Login </title>
       </Helmet>
             <NavBar></NavBar>
-            <div className="hero min-h-screen bg-base-200">
+            <div className="hero min-h-screen ">
 
                 <div className="hero-content flex-col ">
                     <div className="text-center ">
