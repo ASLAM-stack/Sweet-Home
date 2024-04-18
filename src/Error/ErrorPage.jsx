@@ -1,10 +1,10 @@
-import { Link } from "react-router-dom";
+import { Link, useRouteError } from "react-router-dom";
 
- 
-
-const Error = () => {
+const ErrorPage = () => {
+    const error = useRouteError();
+    console.error(error);
     return (
-        <div>
+      <div>
             <div className="cont-404 flex flex-col items-center justify-center h-2/3">
                 
                     <img className="w-8/12" src="/404.svg" alt="" />
@@ -16,4 +16,4 @@ const Error = () => {
     );
 };
 
-export default Error;
+export default ErrorPage;

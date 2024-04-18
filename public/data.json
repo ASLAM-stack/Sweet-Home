@@ -1,0 +1,111 @@
+[
+    {
+      "id": 1,
+      "estate_title": "Tranquil Retreat",
+      "segment_name": "Luxury Homes",
+      "description": "Escape to this serene retreat nestled in the heart of nature. This luxurious estate offers breathtaking views and unparalleled tranquility.",
+      "price": "$1,500,000",
+      "status": "sale",
+      "area": "5000 sq ft",
+      "location": "Mountain Valley",
+      "facilities": ["Infinity Pool", "Spa", "Home Theater"],
+      "image": "https://i.ibb.co/b5xxNMM/1-1.jpg"
+    },
+    {
+      "id": 2,
+      "estate_title": "Cosy Cottage",
+      "segment_name": "Family Homes",
+      "description": "Charming cottage perfect for families. Featuring a spacious backyard and modern amenities, this home is ideal for creating lasting memories.",
+      "price": "$300,000",
+      "status": "sale",
+      "area": "2000 sq ft",
+      "location": "Suburban Neighborhood",
+      "facilities": ["Backyard Garden", "Fireplace", "Playroom"],
+      "image": "https://i.ibb.co/TkjS4Lb/2.jpg"
+    },
+    {
+      "id": 3,
+      "estate_title": "Urban Oasis",
+      "segment_name": "City Living",
+      "description": "Discover your urban oasis in the heart of the city. This modern apartment offers convenience and style, with stunning city views.",
+      "price": "$2,500/month",
+      "status": "rent",
+      "area": "1500 sq ft",
+      "location": "Downtown",
+      "facilities": ["Fitness Center", "Rooftop Terrace", "Concierge Service"],
+      "image": "https://i.ibb.co/G0S6bGP/3.jpg"
+    },
+    {
+      "id": 4,
+      "estate_title": "Seaside Villa",
+      "segment_name": "Beachfront Properties",
+      "description": "Live the beach life in this exquisite seaside villa. With direct access to the beach and panoramic ocean views, this property offers coastal living at its finest.",
+      "price": "$3,200,000",
+      "status": "sale",
+      "area": "7000 sq ft",
+      "location": "Oceanfront",
+      "facilities": ["Private Beach Access", "Outdoor Kitchen", "Sun Deck"],
+      "image": "https://i.ibb.co/G5v9tJy/4.jpg"
+    },
+    {
+      "id": 5,
+      "estate_title": "Rustic Ranch",
+      "segment_name": "Country Retreats",
+      "description": "Experience the charm of country living in this rustic ranch. Situated on acres of land, this property boasts scenic views and endless opportunities for outdoor activities.",
+      "price": "$700,000",
+      "status": "rent",
+      "area": "3000 sq ft",
+      "location": "Rural Countryside",
+      "facilities": ["Stables", "Pond", "Guest House"],
+      "image": "https://i.ibb.co/XDgngtc/5.jpg"
+    },
+    {
+      "id": 6,
+      "estate_title": "Modern Loft",
+      "segment_name": "Urban Dwellings",
+      "description": "Embrace city living in this sleek and stylish loft. With open-concept living spaces and industrial-chic design, this property offers contemporary urban living.",
+      "price": "$450,000",
+      "status": "sale",
+      "area": "1800 sq ft",
+      "location": "Downtown",
+      "facilities": ["High Ceilings", "Exposed Brick", "Balcony"],
+      "image": "https://i.ibb.co/w4Jktbr/6.jpg"
+    },
+    {
+      "id": 7,
+      "estate_title": "Mountain Retreat",
+      "segment_name": "Ski Resorts",
+      "description": "Escape to the mountains in this cozy retreat. Located near ski resorts, this property is perfect for winter getaways and outdoor enthusiasts.",
+      "price": "$850,000",
+      "status": "rent",
+      "area": "2500 sq ft",
+      "location": "Mountain Valley",
+      "facilities": ["Ski Storage", "Hot Tub", "Fire Pit"],
+      "image": "https://i.ibb.co/4fxxDSK/7.jpg"
+    },
+    {
+      "id": 8,
+      "estate_title": "Historic Mansion",
+      "segment_name": "Heritage Properties",
+      "description": "Step back in time in this grand historic mansion. Featuring period details and elegant architecture, this property offers a glimpse into the past.",
+      "price": "$5,000,000",
+      "status": "sale",
+      "area": "10000 sq ft",
+      "location": "Historic District",
+      "facilities": ["Ballroom", "Library", "Wine Cellar"],
+      "image": "https://i.ibb.co/cgWF0Df/8.jpg"
+    },
+    {
+      "id": 9,
+      "estate_title": "Lakefront Cabin",
+      "segment_name": "Waterfront Properties",
+      "description": "Relax by the lake in this charming waterfront cabin. Surrounded by nature, this property is perfect for those seeking peace and tranquility.",
+      "price": "$400,000",
+      "status": "sale",
+      "area": "1500 sq ft",
+      "location": "Lakeside",
+      "facilities": ["Boat Dock", "Deck", "Outdoor Fireplace"],
+      "image": "https://i.ibb.co/5B3BJNw/images-3.jpg"
+    }
+  ]
+  

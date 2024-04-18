@@ -5,13 +5,8 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {
-      fontFamily:{
-        work:'"Work Sans", sans-serif',
-        jersey:'"Jersey 10 Charted", sans-serif',
-        playfair:'"Playfair Display", serif'
-      }
-    },
+    extend: {},
   },
   plugins: [require("daisyui")],
 }
+
