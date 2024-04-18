@@ -59,8 +59,8 @@ const Slider = () => {
       </div>
         </SwiperSlide>
         <SwiperSlide> 
-        <div className="bg-[url('/Slider2.jpg')] space-y-4 w-full pl-4 md:pl-16 h-[600px] bg-cover flex flex-col justify-center bg-center rounded-md">
-        <h1 className="font-work font-bold text-4xl md:text-7xl text-[#9253ff]">Sweet Home</h1>
+        <div className="bg-[url('/Slider2.jpg')] space-y-4 w-full pl-4 md:pl-16 h-[600px] bg-cover flex flex-col items-center justify-center bg-center rounded-md">
+        <h1 className="font-work font-bold text-4xl md:text-7xl text-[#48d6a7]">Sweet Home</h1>
         <p className="text-white text-base ">
           Your key to finding the perfect nest. We specialize in sales and
           <br /> rentals of residential properties, making your dream home a

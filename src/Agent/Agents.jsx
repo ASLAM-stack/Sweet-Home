@@ -24,7 +24,7 @@ const Agents = () => {
         }
       ]
     return (
-        <div className="mb-12 mt-12">
+        <div className="mb-12 mt-12 p-4 md:p-0">
             <div className="text-center mt-5 mb-5">
                 <span className="font-bold">Meet Our</span>
                 <h1 className="text-4xl font-bold">Best Agents</h1>

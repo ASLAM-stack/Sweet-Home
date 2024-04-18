@@ -10,8 +10,8 @@ const TextiCart = ({ review }) => {
         </div>
       </div>
       <div className="text-center">
-        <p>{name}</p>
-        <p>{position}</p>
+        <p className="text-2xl font-bold">{name}</p>
+        <p className="text-lg font-semibold">{position}</p>
         <p>{short_description}</p>
       </div>
       <div className="flex gap-2 flex-wrap">

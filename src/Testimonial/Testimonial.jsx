@@ -40,7 +40,7 @@ const Testimonial = () => {
         }
       ]
     return (
-        <div className="mt-12 mb-12">
+        <div className="mt-12 mb-12 p-4 md:p-0">
             <div className="text-center mb-10">
                 <h1 className="text-4xl font-bold">Testimonials</h1>
                 <p>Publish the best of your client testimonials and let the world know what a great agent or real <br />
