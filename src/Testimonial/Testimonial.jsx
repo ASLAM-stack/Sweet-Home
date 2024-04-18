@@ -1,4 +1,4 @@
-import TextiCart from '../Component/TextiCart'
+import TextiCart from "./TextiCart";
 
 const Testimonial = () => {
     const review = [
